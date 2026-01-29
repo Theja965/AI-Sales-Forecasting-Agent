@@ -1,3 +1,19 @@
+"""
+# 🤖 AI-Powered Sales Analyst Agent
+
+### Overview
+This application creates a conversational AI agent designed to act as a Sales Data Analyst. It integrates OpenAI’s GPT-3.5, LangChain, and FB Prophet to allow users to ask natural language questions about sales data.
+
+### How it Works:
+* **Natural Language to Action:** The agent determines if it needs to run a Prophet forecast or a manual projection based on the user's query.
+* **Tool Use:** It uses a dedicated `get_prophet_forecast` tool to interact with Python dataframes.
+* **Flask API:** The logic is wrapped in a Flask web server, making it ready for integration into a dashboard or chat interface.
+
+### Tech Stack:
+Python, Flask, LangChain, OpenAI API, Pandas, Prophet.
+"""
+
+
 import os
 import pandas as pd
 import openai
